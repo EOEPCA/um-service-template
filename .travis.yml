@@ -14,7 +14,7 @@ jobs:
 
     - stage: container creation and publishing
       install: skip
-      script: travis/containerCreation.sh eoepca/um-service-template
+      script: travis/containerCreation.sh um-service-template
 
     - stage: smoke and acceptance test
       install: skip # without this there's a `git clone` and `gradlew assemble` executed!
