@@ -1,22 +1,20 @@
-sudo: required
-language: java
-install: true 
+language: python
+python: 3.6.9
 
-
+env:
+  DOCKER_COMPOSE_VERSION: 1.25.4
 services:
   - docker
 
 jobs:
   include:
-    - stage: build (compile, unit test, package)
-      language: java
-      jdk: openjdk11
-      install: skip
-      script: travis/build.sh
+    - stage: Testing
+      install: pip install -r src/requirements.txt
+      script: pytest src
 
     - stage: container creation and publishing
       install: skip
-      script: travis/containerCreation.sh
+      script: travis/containerCreation.sh eoepca/um-service-template
 
     - stage: smoke and acceptance test
       install: skip # without this there's a `git clone` and `gradlew assemble` executed!
