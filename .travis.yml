@@ -17,8 +17,8 @@ jobs:
       script: travis/containerCreation.sh um-service-template
 
     - stage: smoke and acceptance test
-      install: skip # without this there's a `git clone` and `gradlew assemble` executed!
-      script: travis/acceptanceTest.sh um-service-template
+      install: skip # without this there's a `git clone` executed!
+      script: travis/acceptanceTest.sh um-service-template 8080 7000 # Service name + external port + internal port for docker
 
     - stage: release
       if: branch = master AND NOT type IN (pull_request)
