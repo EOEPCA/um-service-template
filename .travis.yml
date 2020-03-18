@@ -18,7 +18,7 @@ jobs:
 
     - stage: smoke and acceptance test
       install: skip # without this there's a `git clone` and `gradlew assemble` executed!
-      script: travis/acceptanceTest.sh
+      script: travis/acceptanceTest.sh um-service-template
 
     - stage: release
       if: branch = master AND NOT type IN (pull_request)
