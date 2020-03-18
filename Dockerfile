@@ -1,11 +1,13 @@
 # Base container
-FROM openjdk:11-jre-slim
+FROM python:3.6
 
-# First task: insert Fat-JAR package within the container
-COPY build/libs/template-service.jar /jar/
+# Add requirements, code
+COPY src/* /
+RUN pip install -r requirements.txt
 
 # Declare and expose service listening port
-EXPOSE 7000/tcp
+# EXAMPLE PORT - PLEASE REPLACE WITH REAL ONES
+EXPOSE 8081/tcp
 
-# Declare entrypoint of that exposed service. In this case, running the inserted JAR package.
-ENTRYPOINT ["java", "-jar", "/jar/template-service.jar"]
+# Declare entrypoint of that exposed service
+ENTRYPOINT ["python3", "./main.py"]
