@@ -12,11 +12,17 @@ jobs:
       install: pip install -r src/requirements.txt
       script: pytest src
 
+    - stage: building
+      install: skip
+      script: travis/buildTest.sh
+
     - stage: container creation and publishing
+      if: NOT type IN (pull_request)  
       install: skip
       script: travis/containerCreation.sh um-service-template
 
     - stage: smoke and acceptance test
+      if: NOT type IN (pull_request)
       install: skip # without this there's a `git clone` executed!
       script: travis/acceptanceTest.sh um-service-template 8080 7000 # Service name + external port + internal port for docker
 
