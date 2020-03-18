@@ -1,31 +1,29 @@
-sudo: required
-language: java
-install: true 
+language: python
+python: 3.6.9
 
-
+env:
+  DOCKER_COMPOSE_VERSION: 1.25.4
 services:
   - docker
 
 jobs:
   include:
-    - stage: build (compile, unit test, package)
-      language: java
-      jdk: openjdk11
-      install: skip
-      script: travis/build.sh
+    - stage: Testing
+      install: pip install -r src/requirements.txt
+      script: pytest src
 
     - stage: container creation and publishing
       install: skip
-      script: travis/containerCreation.sh
+      script: travis/containerCreation.sh um-service-template
 
     - stage: smoke and acceptance test
-      install: skip # without this there's a `git clone` and `gradlew assemble` executed!
-      script: travis/acceptanceTest.sh
+      install: skip # without this there's a `git clone` executed!
+      script: travis/acceptanceTest.sh um-service-template 8080 7000 # Service name + external port + internal port for docker
 
     - stage: release
       if: branch = master AND NOT type IN (pull_request)
       install: skip
-      script: travis/release.sh
+      script: travis/release.sh um-service-template
 
 import:
   - docs/.travis.yml
