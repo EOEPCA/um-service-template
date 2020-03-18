@@ -5,6 +5,7 @@ set -euov pipefail
 
 # Check presence of environment variables
 TRAVIS_BRANCH="${TRAVIS_BRANCH:-develop}"
+TRAVIS_BRANCH=${TRAVIS_BRANCH##*/} # Drop the "feature/<whatever>" from tagging
 TRAVIS_BUILD_NUMBER="${TRAVIS_BUILD_NUMBER:-0}"
 
 docker run --rm -d -p $2:$3 --name $1 ${DOCKER_USERNAME}/$1:travis_${TRAVIS_BRANCH}_${TRAVIS_BUILD_NUMBER}

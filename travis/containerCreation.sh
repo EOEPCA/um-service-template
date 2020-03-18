@@ -6,6 +6,7 @@ set -euov pipefail
 
 # Check presence of environment variables
 TRAVIS_BRANCH="${TRAVIS_BRANCH:-develop}"
+TRAVIS_BRANCH=${TRAVIS_BRANCH##*/} # Drop the "feature/<whatever>" from tagging
 TRAVIS_BUILD_NUMBER="${TRAVIS_BUILD_NUMBER:-0}"
 
 # Create a Docker image and tag it as 'travis_<build number>'
