@@ -183,34 +183,25 @@ Contributions are what make the open source community such an amazing place to b
 
 Distributed under the Apache-2.0 License. See `LICENSE` for more information.
 
-<!-- CONTACT -->
-
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
+[EOEPCA mailbox](eoepca.systemteam@telespazio.com)
 
-Project Link: [https://github.com/EOEPCA/template-svce](https://github.com/EOEPCA/template-svce)
-
-<!-- ACKNOWLEDGEMENTS -->
+Project Link: [https://github.com/EOEPCA/um-pylibrary-template](https://github.com/EOEPCA/um-pylibrary-template)
 
 ## Acknowledgements
 
-- []()
-- []()
 - README.md is based on [this template](https://github.com/othneildrew/Best-README-Template) by [Othneil Drew](https://github.com/othneildrew).
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/EOEPCA/template-svce.svg?style=flat-square
-[contributors-url]: https://github.com/EOEPCA/template-svce/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/EOEPCA/template-svce.svg?style=flat-square
-[forks-url]: https://github.com/EOEPCA/template-svce/network/members
-[stars-shield]: https://img.shields.io/github/stars/EOEPCA/template-svce.svg?style=flat-square
-[stars-url]: https://github.com/EOEPCA/template-svce/stargazers
-[issues-shield]: https://img.shields.io/github/issues/EOEPCA/template-svce.svg?style=flat-square
-[issues-url]: https://github.com/EOEPCA/template-svce/issues
-[license-shield]: https://img.shields.io/github/license/EOEPCA/template-svce.svg?style=flat-square
-[license-url]: https://github.com/EOEPCA/template-svce/blob/master/LICENSE
-[build-shield]: https://www.travis-ci.com/EOEPCA/template-svce.svg?branch=master
-[product-screenshot]: images/screenshot.png
+[contributors-shield]: https://img.shields.io/github/contributors/EOEPCA/um-pylibrary-template.svg?style=flat-square
+[contributors-url]: https://github.com/EOEPCA/um-pylibrary-template/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/EOEPCA/um-pylibrary-template.svg?style=flat-square
+[forks-url]: https://github.com/EOEPCA/um-pylibrary-template/network/members
+[stars-shield]: https://img.shields.io/github/stars/EOEPCA/um-pylibrary-template.svg?style=flat-square
+[stars-url]: https://github.com/EOEPCA/um-pylibrary-template/stargazers
+[issues-shield]: https://img.shields.io/github/issues/EOEPCA/um-pylibrary-template.svg?style=flat-square
+[issues-url]: https://github.com/EOEPCA/um-pylibrary-template/issues
+[license-shield]: https://img.shields.io/github/license/EOEPCA/um-pylibrary-template.svg?style=flat-square
+[license-url]: https://github.com/EOEPCA/um-pylibrary-template/blob/master/LICENSE
+[build-shield]: https://www.travis-ci.com/EOEPCA/um-pylibrary-template.svg?branch=master
