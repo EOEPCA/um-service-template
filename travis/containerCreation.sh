@@ -18,3 +18,4 @@ docker tag eoepca/$1 $DOCKER_USERNAME/$1:$buildTag
 echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 
 docker push $DOCKER_USERNAME/$1:$buildTag   # defaults to docker hub
+
