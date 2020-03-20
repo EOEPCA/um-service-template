@@ -11,8 +11,8 @@ echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 docker pull eoepca/$1:$buildTag  # have to pull locally in order to tag as a release
 
 # Tag and push as a Release
-docker tag eoepca/$1:$buildTag eoepca/$1:release_$TRAVIS_TAG
-docker push eoepca/$1:release_$TRAVIS_TAG
+docker tag eoepca/$1:$buildTag eoepca/$1:release_$TRAVIS_BUILD_NUMBER
+docker push eoepca/$1:release_$TRAVIS_BUILD_NUMBER
 
 # Tag and push as `latest`
 docker tag eoepca/$1:$buildTag eoepca/$1:latest
