@@ -25,7 +25,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">template-service</h3>
+  <h3 align="center">um-service-template</h3>
 
   <p align="center">
     Template for developing an EOEPCA Service
@@ -39,22 +39,6 @@
     <a href="https://github.com/EOEPCA/um-service-template/issues">Request Feature</a>
   </p>
 </p>
-
-## Steps to use this template
-- Replace all "um-service-template" in .travis.yml with your repository's name
-- Replace the ports in .travis.yml and Dockerfile to fit your service's ports
-- Edit docs to fit your repository
-- Replace code and requirements.txt in src by your own! Make sure to use pytest, or replace it in the .travis.yml to use the correct testing suite 
-- Un-comment the "notifications" segment in .travis.yml, and input the correct data for slack and/or emails you want to notify
-
-- setup the following variables (in travis webpage, for this project) to ensure travis automated CI works (https://travis-ci.com/github/EOEPCA/<project>/settings):
-    1. GH_REPOS_NAME (this repo's name)
-    2. GH_USER_NAME (GitHub name for the responsible of this module)
-    3. GH_USER_EMAIL (GitHub email for the responsible of this module)
-    4. DOCKER_USERNAME (Username of a user with write privileges on EOEPCA in dockerhub) MAKE SURE TO MAKE THIS VARIABLE HIDDEN IN LOGS
-    5. DOCKER_PASSWORD (password for the username) MAKE SURE TO MAKE THIS VARIABLE HIDDEN IN LOGS
-
-- Edit readme to fit your repository, and delete this part!
 
 ## Table of Contents
 
@@ -113,7 +97,7 @@ vagrant ssh
 3. Clone the repo
 
 ```sh
-git clone https://github.com/EOEPCA/um-service-template.git
+git clone https://github.com/EOEPCA/um-service-templategit
 ```
 
 4. Change local directory
@@ -169,14 +153,14 @@ Project Link: [https://github.com/EOEPCA/um-service-template](https://github.com
 - README.md is based on [this template](https://github.com/othneildrew/Best-README-Template) by [Othneil Drew](https://github.com/othneildrew).
 
 
-[contributors-shield]: https://img.shields.io/github/contributors/EOEPCA/um-service-template.svg?style=flat-square
+[contributors-shield]: https://img.shields.io/github/contributors/EOEPCA/um-service-templatesvg?style=flat-square
 [contributors-url]: https://github.com/EOEPCA/um-service-template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/EOEPCA/um-service-template.svg?style=flat-square
+[forks-shield]: https://img.shields.io/github/forks/EOEPCA/um-service-templatesvg?style=flat-square
 [forks-url]: https://github.com/EOEPCA/um-service-template/network/members
-[stars-shield]: https://img.shields.io/github/stars/EOEPCA/um-service-template.svg?style=flat-square
+[stars-shield]: https://img.shields.io/github/stars/EOEPCA/um-service-templatesvg?style=flat-square
 [stars-url]: https://github.com/EOEPCA/um-service-template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/EOEPCA/um-service-template.svg?style=flat-square
+[issues-shield]: https://img.shields.io/github/issues/EOEPCA/um-service-templatesvg?style=flat-square
 [issues-url]: https://github.com/EOEPCA/um-service-template/issues
-[license-shield]: https://img.shields.io/github/license/EOEPCA/um-service-template.svg?style=flat-square
+[license-shield]: https://img.shields.io/github/license/EOEPCA/um-service-templatesvg?style=flat-square
 [license-url]: https://github.com/EOEPCA/um-service-template/blob/master/LICENSE
-[build-shield]: https://www.travis-ci.com/EOEPCA/um-service-template.svg?branch=master
+[build-shield]: https://www.travis-ci.com/EOEPCA/um-service-templatesvg?branch=master
