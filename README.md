@@ -134,22 +134,6 @@ Use this space to show useful examples of how a project can be used. Additional 
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
-### Running the template service
-
-Just execute the run task in Gradle
-
-```sh
-./gradlew run
-```
-
-### Upgrading Gradle Wrapper
-
-Change the version number in the `build.gradle` wrapper task then run:
-
-```sh
-./gradlew wrapper --gradle-version=4.10.2 --distribution-type=bin
-```
-
 <!-- ROADMAP -->
 
 ## Roadmap
